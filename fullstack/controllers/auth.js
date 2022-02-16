@@ -1,6 +1,8 @@
 module.exports.login = function (req, res) {
+    const {email} = req.body
+
     res.status(200).json({
-        login: true
+        email
     })
 }
 
